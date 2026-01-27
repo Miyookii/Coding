@@ -28,7 +28,7 @@ int main(){
   change -= (dimes * 0.1);                      // Deduct the amount of dimes from the change                                               || 0.16 x (1 * 0.1) = 0.06
     nickels = static_cast<int>(change / 0.05);  // Divide the change by nickels and convert the amount to integer                           || 0.06 / 0.05 = 1.2 ->(conv to int) 1
   change -= (nickels * 0.05);                   // Deduct the amount of nickels from the change                                             || 0.06 x (1 * 0.05) = 0.01
-    pennies = static_cast<int>(change / 0.01); // Divide the change by pennies and convert the amount to intger                            || 0.01 / 0.01 = 1 ->(conv to int) 1
+    pennies = static_cast<int>(change / 0.01);  // Divide the change by pennies and convert the amount to intger                            || 0.01 / 0.01 = 1 ->(conv to int) 1
 
   cout << "\nBreakdown of Receipt: \nTotal Money Owed: $" << owedMoney << endl;
   cout << "Total Money Paid: $" << paidMoney << endl;
@@ -37,8 +37,8 @@ int main(){
   cout << "------------------------------" << endl;
   if((owedMoney - paidMoney) != 0) cout << "Breakdown of Change:" << endl;     // Only show message if there is change
   if(dollars > 0) cout << "Dollars: " << dollars << endl;                      // Only show message if there is dollars
-  if(quarters > 0) cout << "Quarters: " << quarters << endl;                    // Only show message if there is quarters
-  if(dimes > 0) cout << "Dimes: " << dimes << endl;                          // Only show message if there is dimes
+  if(quarters > 0) cout << "Quarters: " << quarters << endl;                   // Only show message if there is quarters
+  if(dimes > 0) cout << "Dimes: " << dimes << endl;                            // Only show message if there is dimes
   if(nickels > 0) cout << "Nickels: " << nickels << endl;                      // Only show message if there is nickels
   if(pennies > 0) cout << "Pennies: " << pennies << endl;                      // Only show message if there is pennies
   
