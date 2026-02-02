@@ -10,11 +10,12 @@ int main()
 	
 	cout << "Grade Checker (Type -1 if done entering scores)" << endl;
 	
+		// Initialize counter to 0, keep looping if value of scores is not equal to -1, increment counter by 1 every loop
 	for(counter = 0; scores != -1; counter ++){
 	    cout << "Enter score #" << counter + 1 << ": ";
 	    cin >> scores;
-	    if(scores == -1) break;
-	    totalPoints += scores;
+	    if(scores == -1) break;	// Stop the loop if user entered -1
+	    totalPoints += scores;	// Add score entered to totalPoints
     }
     
     cout << "Total Number of Scores Entered: " << counter << endl;
