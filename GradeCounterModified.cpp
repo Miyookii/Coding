@@ -16,7 +16,7 @@ int main()
 	    cin >> scores;
 	    if(scores == -1) break;	// Stop the loop if user entered -1
 	    totalPoints += scores;	// Add score entered to totalPoints
-    }
+    }	// end of loop
     
     cout << "Total Number of Scores Entered: " << counter << endl;
     cout << "Total Points: " << totalPoints << " Points" << endl;
