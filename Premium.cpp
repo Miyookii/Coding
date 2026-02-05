@@ -93,7 +93,7 @@ int main(){
     cout << "------------------------------------" << endl;
     
     if(netTotal > 0)        cout << "Net Profit: \t$" << netTotal << " (PROFIT)"; // Output message if netTotal is more than 0
-    else if(netTotal < 0)   cout << "Net Loss: \t $" << netTotal << " (LOSS)";  // Output message if netTotal is less than 0
+    else if(netTotal < 0)   cout << "Net Loss: \t -$" << netTotal << " (LOSS)";  // Output message if netTotal is less than 0
     else                    cout << "Break Even: $0";
         
     cout << "\nWould you like to run the program again? (Y/N): ";
